@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 Place.destroy_all
+Entry.destroy_all
 
 new_places = [
     {name: "Mexico City"}, 
@@ -14,3 +15,8 @@ new_places = [
     {name: "Amsterdam"}
 ]
 Place.create(new_places)
+
+new_entry = [
+    {title: "Delicious Tacos", description: "I ate tacos", occurred_on: "2023-10-01", place_id: 29}
+]
+Entry.create(new_entry)
