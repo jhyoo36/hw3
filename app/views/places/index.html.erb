@@ -1,13 +1,15 @@
-
-<h1 style="font-family:verdana;"> Places I've Been</h1>
-
+<br>
+<h1 style="margin-left: 40px;font-family:verdana;"> Places I've Been</h1>
+<br>
 
 <% for place in @places %>
-  <p>
+  <p style="margin-left: 40px;font-family:verdana;">
     <a href="/places/<%= place["id"]%> ">
     <%= place["name"] %></a>
   </p>
 
 <% end %>
 
-<button><a href="/places/new"> Enter a new place</a></button>
+<button style="margin-left: 40px;font-family:verdana;">
+  <a href="/places/new"> Enter a new place</a>
+</button>

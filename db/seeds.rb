@@ -16,7 +16,10 @@ new_places = [
 ]
 Place.create(new_places)
 
+mexico = Place.find_by({ "name" => "Mexico City" })
 new_entry = [
-    {title: "Delicious Tacos", description: "I ate tacos", occurred_on: "2023-10-01", place_id: 29}
+    {title: "Delicious Tacos", description: "I ate pollo tacos", occurred_on: "2022-01-01", place_id: mexico.id},
+    {title: "Lisa and Jim's Wedding", description: "Wedding was beautiful", occurred_on: "2022-01-01", place_id: mexico.id},
+    {title: "Ate tacos again", description: "I ate al pastor tacos", occurred_on: "2022-01-01", place_id: mexico.id}
 ]
 Entry.create(new_entry)
