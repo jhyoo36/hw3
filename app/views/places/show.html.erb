@@ -1,4 +1,4 @@
-<!-- Place details page-->
+<!-- Place details with postings page-->
 <br>
 <h1 style="margin-left: 40px; font-family:verdana;">
   <%= @place["name"] %>
@@ -10,7 +10,7 @@
   <h3 style="margin-left: 40px;font-family:verdana;"><%= entry.title %></h3>
   <p style="margin-left: 40px;font-family:verdana;"><%= entry.occurred_on %></p>
   <p style="margin-left: 40px;font-family:verdana;"><%= entry.description %></p>
-  
+
   <br>
 <% end %>
 
@@ -19,6 +19,6 @@
   <a href="/entries/new?place_id=<%= @place.id %>"> New Post</a>
 </button>
 
-<button style="font-family:verdana;">
+<button style="margin-left: 10px; font-family:verdana;">
 <a href="/places">Back to All Places</a>
 </button>
